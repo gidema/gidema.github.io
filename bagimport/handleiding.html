@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
-	<TITLE>BAG import Nederland</TITLE>
+	<TITLE></TITLE>
 	<META NAME="GENERATOR" CONTENT="LibreOffice 4.1.3.2 (Linux)">
 	<META NAME="AUTHOR" CONTENT="JR">
 	<META NAME="CREATED" CONTENT="20140113;205700000000000">
@@ -63,7 +63,7 @@ eerste BAG import met een klein gebied (maximaal 1000 huizen).</B></FONT></P>
 	name) -source:BAG</LI>
 	<LI>bag=conversie</LI>
 	<LI>("addr:interpolation" OR "addr:street" OR "addr:housenumber") -bag:conversie -(amenity OR leisure OR shop OR office OR tourism OR name) -source:BAG</LI></OL>
-	<B>Notabene: </b> Filters 1 en 2 moeten op basis van "Replace selection" ingesteld worden.</P></LI>
+	<B>Notabene: </b> Filters 1, 2 en 3 moeten op basis van "Replace selection" ingesteld worden.</P></LI>
 
 	<LI>Installatie osmconvert en script.
 	<UL><LI>Maak een map ‘BAG-split’ aan</LI>
@@ -124,7 +124,7 @@ Maak duidelijk dat je van plan bent een import te doen van adressen
 en gebouwen, waarbij zij of mee kunnen helpen of kunnen aangeven wat
 ze willen doen met de door hen ingevoerde adressen. Het is binnen OSM
 normaal om een reactietijd van maximaal een week te geven.<BR>Een hulpmiddel om
-andere mappers te vinden zijn de site <a href="http://resultmaps.neis-one.org/oooc?zoom=8&lat=52.39708&lon=5.9064&layers=00BFTFFFFT" target="_blank">Who is around me?</a> en de site <a href="http://www.itoworld.com/map/130?lon=5.28510&lat=52.40372&zoom=8&fullscreen=true&fullscreen=true" target="_blank">ITO map - recent edits</a> (Gebruik de Layers button om te wisselen tussen periodes en fixups/edits)</P>
+andere mappers te vinden zijn de site <a href="http://resultmaps.neis-one.org/oooc?zoom=8&lat=52.39708&lon=5.9064&layers=00BFTFFFFT" target="_blank">Who is around me?</a> en de site <a href="http://www.itoworld.com/map/130?lon=5.28510&lat=52.40372&zoom=8&fullscreen=true&fullscreen=true" target="_blank">ITO map - recent edits</a> (Gebruik de Layers button om te wisselen tussen periodes en fixups/edits). Ook de <a href="http://tools.geofabrik.de/osmi/?view=addresses&lon=5.61383&lat=52.34642&zoom=8" target="_blank">OSM inspector</a> website kan aanwijzingen geven wie er in "jouw" gebied actief is.</P>
 <H2>STAP 2. BAG panden en adressen voorzien van relevante bestaande data</H2>
 <OL TYPE=A>
 	<LI>Om te voorkomen dat je hele stukken van de BAG niet importeert, is het
@@ -166,7 +166,7 @@ andere mappers te vinden zijn de site <a href="http://resultmaps.neis-one.org/oo
 		met de naam ODS_BAG in de map BAG-split. Sla de laag OSM BAG op als
 		OSM file met de naam OSM_BAG in de map BAG-split.</p></LI>
 	</OL>
-	<LI>Sluit alle lagen in JOSM<A CLASS="sdfootnoteanc" NAME="sdfootnote7anc" HREF="#sdfootnote7sym"><SUP>7</SUP></A>.</FONT></P>
+	<LI>Verwijder alle lagen in JOSM (rechts-klik: Delete)<A CLASS="sdfootnoteanc" NAME="sdfootnote7anc" HREF="#sdfootnote7sym"><SUP>7</SUP></A>.</FONT></P>
 	<LI>Gebruik OSMconvert om op basis van de polygon (let op dat je de actuele naam
 	met het juiste volgnummer gebruikt in je bat files<A CLASS="sdfootnoteanc" NAME="sdfootnote8anc" HREF="#sdfootnote8sym"><SUP>8</SUP></A>)
 	een uitsnede te maken van het ODS BAG bestand en het OSM BAG
@@ -220,7 +220,7 @@ andere mappers te vinden zijn de site <a href="http://resultmaps.neis-one.org/oo
 	<LI>Verwijder de resterende
 	selectie in het gebied dat je vervangt. Het filter verwijdert niet
 	alle te verwijderen multipolygonen, check met het filter: building
-	type=multipolygon of  er nog andere te verwijdeen panden met
+	type=multipolygon of  er nog andere te verwijderen panden met
 	mutlipolygonen zijn.</P></UL></LI>
 	<LI><i>Verwijder bestaande niet-BAG adressen</I>
 	<UL><LI>Activeer het <I>geïnverteerde</I>
